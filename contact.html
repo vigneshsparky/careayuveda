@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Care Ayurveda™ | Get in Touch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/care-ayurveda-fav-color.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/help1.css">
+    <link rel="stylesheet" href="css/help2.css">
+    <link rel="stylesheet" href="css/help3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="brand-logo">
+                <a href="index.html" class="brand-name">
+                    <div class="logo-main">Care Ayurveda</div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#benefits">Benefits</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="whatsapp-btn-nav" onclick="window.open('https://wa.me/918925306239', '_blank')">
+                    <i class="fab fa-whatsapp"></i> Order Now
+                </button>
+                <button class="mobile-menu" id="mobileMenu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+
+            <li><a href="./about.html">
+                    <i class="fas fa-info-circle"></i> About Us
+                </a></li>
+
+            <li><a href="#benefits">
+                    <i class="fas fa-check-circle"></i> Benefits
+                </a></li>
+
+            <li><a href="#ingredients">
+                    <i class="fas fa-leaf"></i> Ingredients
+                </a></li>
+
+            <li><a href="#how-to-use">
+                    <i class="fas fa-question-circle"></i> How to Use
+                </a></li>
+
+            <li><a href="#testimonials">
+                    <i class="fas fa-comments"></i> Reviews
+                </a></li>
+
+            <li><a href="./policies.html">
+                    <i class="fas fa-file-alt"></i> Policies
+                </a></li>
+
+            <li><a href="./license.html">
+                    <i class="fas fa-certificate"></i> Licenses
+                </a></li>
+
+            <li><a href="#contact">
+                    <i class="fas fa-phone"></i> Contact
+                </a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Hero -->
+    <section class="hero" style="padding-top: 150px;">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Contact Us</h1>
+                <p class="section-subtitle">We're here to help you with any questions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="ingredients-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp Orders & Support</h4>
+                            <p>+91 89253 06239</p>
+                            <p><small>Quickest response - Send "Hi" to start chat</small></p>
+                            <button class="whatsapp-contact-btn"
+                                onclick="window.open('https://wa.me/918925306239', '_blank')">
+                                <i class="fab fa-whatsapp"></i> Message Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+91 89253 06239</p>
+                            <p><small>Mon-Sat: 10 AM - 7 PM | Sun: 10 AM - 5 PM</small></p>
+                            <button class="call-contact-btn" onclick="window.location.href='tel:+918925306239'">
+                                <i class="fas fa-phone-alt"></i> Call Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>careayurveda.contact@gmail.com</p>
+                            <p><small>Response within 24 hours</small></p>
+                            <button class="email-contact-btn"
+                                onclick="window.location.href='mailto:careayurveda.contact@gmail.com'">
+                                <i class="fas fa-envelope"></i> Send Email
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Business Address</h4>
+                            <p>Herbal Wellness Center</p>
+                            <p>Chennai, Tamil Nadu - 600001</p>
+                            <p><small>By appointment only</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-card">
+                    <h3>Support Request Form</h3>
+
+                    <form id="supportForm" class="support-form">
+
+                        <div class="support-field">
+                            <label for="supportName">Full Name *</label>
+                            <input type="text" id="supportName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="support-field">
+                            <label for="supportPhone">Phone Number *</label>
+                            <input type="tel" id="supportPhone" placeholder="Enter your WhatsApp number" required>
+                        </div>
+
+                        <div class="support-field">
+                            <label for="supportEmail">Email Address</label>
+                            <input type="email" id="supportEmail" placeholder="Enter your email address">
+                        </div>
+
+                        <div class="support-field">
+                            <label for="supportSubject">Issue Type</label>
+                            <select id="supportSubject">
+                                <option value="">Select an option</option>
+                                <option value="order">Order Inquiry</option>
+                                <option value="product">Product Information</option>
+                                <option value="return">Return / Refund</option>
+                                <option value="bulk">Bulk Order</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="support-field">
+                            <label for="supportMessage">Message *</label>
+                            <textarea id="supportMessage" placeholder="Describe your issue..." rows="4"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="support-submit-btn">
+                            <i class="fas fa-headset"></i> Submit Request
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our Ayurvedic Hair Care</p>
+            </div>
+
+            <div class="faq-accordion">
+
+                <div class="faq-item active">
+                    <button class="faq-question">
+                        <span>How long does delivery take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Delivery usually takes 3–7 business days across India. Metro cities receive orders faster.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is Cash on Delivery available?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, Cash on Delivery (COD) is available across India with no extra charges.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is this hair oil 100% Ayurvedic?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Our formulation follows traditional Ayurvedic principles using natural herbs and oils.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is it suitable for all hair types?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, it is suitable for dry, oily, frizzy, damaged, and chemically treated hair.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can men and women both use this oil?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Our Ayurvedic hair oil is safe and effective for both men and women.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How often should I use it?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For best results, apply 2–3 times per week and massage gently into the scalp.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Does it help reduce hair fall?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Regular use strengthens roots, improves scalp health, and reduces hair fall naturally.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>When will I see visible results?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most users notice improvement within 4–6 weeks of consistent usage.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is it safe for sensitive scalp?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. It is free from parabens, mineral oil, and harsh chemicals.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How should the oil be stored?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Store in a cool, dry place away from direct sunlight.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Business Hours -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Business Hours</h2>
+                <div class="hours-grid">
+                    <div class="hour-item">
+                        <h3>Monday - Saturday</h3>
+                        <p>10:00 AM - 7:00 PM</p>
+                    </div>
+                    <div class="hour-item">
+                        <h3>Sunday</h3>
+                        <p>10:00 AM - 5:00 PM</p>
+                    </div>
+                    <div class="hour-item">
+                        <h3>Emergency Support</h3>
+                        <p>Available via WhatsApp - +91 89253 06239</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-text">Care Ayurveda</div>
+                        <div class="logo-subtext">Authentic Ayurvedic Products</div>
+                    </div>
+                    <p class="footer-description">Traditional Ayurvedic formula with 18 herbs for complete hair care</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#benefits">Benefits</a></li>
+                        <li><a href="index.html#ingredients">Ingredients</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="policies.html">Policies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Herbal Wellness Center, Chennai</p>
+                    <p><i class="fas fa-phone"></i> +91 89253 06239</p>
+                    <p><i class="fas fa-envelope"></i> careayurveda.contact@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-disclaimer">
+                    <p><i class="fas fa-exclamation-circle"></i> For external use only. Always do a patch test before
+                        first use. Results may vary individually.</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2026 Care Ayurveda™. All rights reserved.</p>
+                    <p>Made with <i class="fas fa-heart"></i> for healthy living</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/918925306239" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Call Float Button -->
+    <a href="tel:+918925306239" class="call-float">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/help1.js"></script> -->
+    <!-- <script src="js/help3.js"></script> -->
+    <script src="js/menu.js" defer></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const supportForm = document.getElementById("supportForm");
+
+            if (!supportForm) return;
+
+            supportForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                const name = document.getElementById("supportName").value.trim();
+                const phone = document.getElementById("supportPhone").value.trim();
+                const email = document.getElementById("supportEmail").value.trim();
+                const subject = document.getElementById("supportSubject").value;
+                const message = document.getElementById("supportMessage").value.trim();
+
+                if (!name || !phone || !message) {
+                    alert("Please fill all required fields.");
+                    return;
+                }
+
+                const whatsappNumber = "918925306239"; // ← CHANGE THIS
+
+                const whatsappMessage =
+                    `Hello Support Team,
+
+*New Support Request*
+
+👤 Name: ${name}
+📞 Phone: ${phone}
+📧 Email: ${email || "Not Provided"}
+📌 Issue Type: ${subject || "Not Selected"}
+
+📝 Message:
+${message}`;
+
+                const encodedMessage = encodeURIComponent(whatsappMessage);
+
+                const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+                window.open(whatsappURL, "_blank");
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

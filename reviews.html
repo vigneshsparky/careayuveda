@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - Care Ayurveda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/care-ayurveda-fav-color.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/help1.css">
+    <link rel="stylesheet" href="css/help2.css">
+    <link rel="stylesheet" href="css/help3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="brand-logo">
+                <a href="index.html" class="brand-name">
+                    <div class="logo-main">Care Ayurveda</div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#benefits">Benefits</a></li>
+                <li><a href="index.html#ingredients">Ingredients</a></li>
+                <li><a href="reviews.html" class="active">Reviews</a></li>
+                <li><a href="license.html">Licenses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="whatsapp-btn-nav" onclick="window.open('https://wa.me/918925306239', '_blank')">
+                    <i class="fab fa-whatsapp"></i> Order Now
+                </button>
+                <button class="mobile-menu" id="mobileMenu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="index.html#benefits"><i class="fas fa-check-circle"></i> Benefits</a></li>
+            <li><a href="index.html#ingredients"><i class="fas fa-leaf"></i> Ingredients</a></li>
+            <li><a href="reviews.html"><i class="fas fa-comments"></i> Reviews</a></li>
+            <li><a href="license.html"><i class="fas fa-certificate"></i> Licenses</a></li>
+            <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Reviews Hero -->
+    <section class="hero" style="padding-top: 150px; background: linear-gradient(135deg, #fff8f0 0%, #fff0f0 100%);">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Real Customer Reviews</h1>
+                <p class="section-subtitle">5,000+ Satisfied Customers Share Their Hair Transformation Stories</p>
+                <div class="stats-banner">
+                    <div class="stat">
+                        <h3>4.8/5</h3>
+                        <p>Average Rating</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5,000+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat">
+                        <h3>94%</h3>
+                        <p>Would Recommend</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Review -->
+    <section class="featured-review">
+        <div class="container">
+            <div class="review-highlight">
+                <div class="review-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h2>"My hair transformation journey with Care Ayurveda has been nothing short of amazing!"</h2>
+                    <p class="review-text">After struggling with hair fall for 5 years and trying countless products, I finally found something that works. Within 3 months of using Care Ayurveda Hair Oil, my hair fall reduced by 80% and I can see new hair growth. The best part? It's completely natural!</p>
+                    <div class="reviewer-info">
+                        <img src="images/girl-model-1.jpg" 
+                             alt="Priya Sharma" class="reviewer-avatar">
+                        <div>
+                            <h4>Priya Sharma, 28</h4>
+                            <p>Marketing Professional • Mumbai</p>
+                            <span>Verified Buyer • Using for 6 months</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-images">
+                    <div class="before-after">
+                        <div class="image-container">
+                            <h4>Before</h4>
+                            <img src="images/Hair-Loss-2.jpg" 
+                                 alt="Before treatment">
+                            <p>Month 0 - Severe hair fall, thinning hair</p>
+                        </div>
+                        <div class="image-container">
+                            <h4>After 3 Months</h4>
+                            <img src="images/Strong-Hair-2.jpg" 
+                                 alt="After 3 months">
+                            <p>Visible thickness, reduced hair fall</p>
+                        </div>
+                        <div class="image-container">
+                            <h4>After 6 Months</h4>
+                            <img src="images/Strong-Hair-1.jpg" 
+                                 alt="After 6 months">
+                            <p>Healthy growth, strong roots</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Reviews Grid -->
+    <section class="detailed-reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Detailed Customer Experiences</h2>
+                <p class="section-subtitle">Real stories from real people of all ages</p>
+            </div>
+
+            <!-- Review 1: Young Woman -->
+            <div class="review-story">
+                <div class="story-header">
+                    <div class="customer-profile">
+                        <img src="images/girl-model-1.jpg" 
+                             alt="Anjali Patel">
+                        <div>
+                            <h3>Anjali Patel, 24</h3>
+                            <p>Software Engineer • Bangalore</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <span>4.5/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-meta">
+                        <span><i class="far fa-calendar"></i> Using for 4 months</span>
+                        <span><i class="fas fa-check-circle"></i> Verified Purchase</span>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <div class="before-after-comparison">
+                        <div class="comparison-item">
+                            <h4>Before Treatment</h4>
+                            <img src="images/Female-Hair-Loss.jpg" 
+                                 alt="Before">
+                            <ul>
+                                <li>Hair fall after shower: 100+ strands</li>
+                                <li>Dry, frizzy hair texture</li>
+                                <li>Slow hair growth</li>
+                                <li>Dandruff issues</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>After 4 Months</h4>
+                            <img src="images/Strong-Hair-2.jpg" 
+                                 alt="After">
+                            <ul>
+                                <li>Hair fall reduced to 10-15 strands</li>
+                                <li>Smooth, shiny hair texture</li>
+                                <li>2 inches growth in 4 months</li>
+                                <li>No dandruff</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="story-text">
+                        <h4>My Story:</h4>
+                        <p>Working in IT with long hours and stress took a toll on my hair. I tried many chemical products but they only made things worse. Care Ayurveda was recommended by a colleague, and I'm so grateful! The herbal fragrance is soothing, and I love that there's no chemical smell. My hair feels stronger and healthier than ever before.</p>
+                        <div class="key-results">
+                            <div class="result">
+                                <i class="fas fa-check-circle"></i>
+                                <span>80% reduction in hair fall</span>
+                            </div>
+                            <div class="result">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Natural shine returned</span>
+                            </div>
+                            <div class="result">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Dandruff completely gone</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2: Young Man -->
+            <div class="review-story">
+                <div class="story-header">
+                    <div class="customer-profile">
+                        <img src="images/girl-model-1.jpg" 
+                             alt="Rahul Verma">
+                        <div>
+                            <h3>Rahul Verma, 26</h3>
+                            <p>Gym Trainer • Delhi</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>5/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-meta">
+                        <span><i class="far fa-calendar"></i> Using for 5 months</span>
+                        <span><i class="fas fa-check-circle"></i> Verified Purchase</span>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <div class="before-after-comparison">
+                        <div class="comparison-item">
+                            <h4>Before Treatment</h4>
+                            <img src="images/Hair-Loss-3.jpg" 
+                                 alt="Before">
+                            <ul>
+                                <li>Receding hairline</li>
+                                <li>Thinning at crown</li>
+                                <li>Oily scalp</li>
+                                <li>Itchy scalp</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>After 5 Months</h4>
+                            <img src="images/Strong-Hair-3.jpg" 
+                                 alt="After">
+                            <ul>
+                                <li>New hair growth at hairline</li>
+                                <li>Improved thickness</li>
+                                <li>Balanced scalp oil</li>
+                                <li>No more itching</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="story-text">
+                        <h4>My Story:</h4>
+                        <p>As a gym trainer, I sweat a lot and my hair health was suffering. I was starting to notice thinning at 26! Tried minoxidil but got side effects. Care Ayurveda was a game-changer. The cooling sensation feels great after workout. My friends have started noticing the difference. The best part is it's completely natural with no side effects.</p>
+                        <div class="key-results">
+                            <div class="result">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Visible hair regrowth at hairline</span>
+                            </div>
+                            <div class="result">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Scalp health improved</span>
+                            </div>
+                            <div class="result">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Confidence restored</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 3: Middle-aged Woman -->
+            <div class="review-story">
+                <div class="story-header">
+                    <div class="customer-profile">
+                        <img src="images/girl-model-1.jpg" 
+                             alt="Meera Desai">
+                        <div>
+                            <h3>Meera Desai, 42</h3>
+                            <p>Homemaker • Pune</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>5/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-meta">
+                        <span><i class="far fa-calendar"></i> Using for 8 months</span>
+                        <span><i class="fas fa-check-circle"></i> Verified Purchase</span>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <div class="before-after-comparison">
+                        <div class="comparison-item">
+                            <h4>Before Treatment</h4>
+                            <img src="images/Hair-Loss-2.jpg" 
+                                 alt="Before">
+                            <ul>
+                                <li>Severe hair fall post-pregnancy</li>
+                                <li>Dry, brittle hair</li>
+                                <li>Premature greying</li>
+                                <li>Low hair volume</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>After 8 Months</h4>
+                            <img src="images/Strong-Hair-2.jpg" 
+                                 alt="After">
+                            <ul>
+                                <li>90% less hair fall</li>
+                                <li>Strong, healthy hair</li>
+                                <li>Slowed greying process</li>
+                                <li>Increased volume</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="story-text">
+                        <h4>My Story:</h4>
+                        <p>After my second child, my hair fall was uncontrollable. I lost almost 40% of my hair density. I was desperate and tried everything. Care Ayurveda was recommended by my sister. The results have been incredible! Not only has hair fall stopped, but my hair has regained its natural shine and strength. I've recommended it to all my friends.</p>
+                        <div class="key-results">
+                            <div class="result">
+                                <i class="fas fa-check-circle"></i>
+                                <span>90% reduction in hair fall</span>
+                            </div>
+                            <div class="result">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Hair density restored</span>
+                            </div>
+                            <div class="result">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Natural shine returned</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 4: College Student -->
+            <div class="review-story">
+                <div class="story-header">
+                    <div class="customer-profile">
+                        <img src="images/girl-model-1.jpg" 
+                             alt="Neha Singh">
+                        <div>
+                            <h3>Neha Singh, 21</h3>
+                            <p>College Student • Kolkata</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <span>4.5/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-meta">
+                        <span><i class="far fa-calendar"></i> Using for 3 months</span>
+                        <span><i class="fas fa-check-circle"></i> Verified Purchase</span>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <div class="before-after-comparison">
+                        <div class="comparison-item">
+                            <h4>Before Treatment</h4>
+                            <img src="images/Female-Hair-Loss.jpg" 
+                                 alt="Before">
+                            <ul>
+                                <li>Hair damage from coloring</li>
+                                <li>Split ends</li>
+                                <li>Dull hair</li>
+                                <li>Breakage</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>After 3 Months</h4>
+                            <img src="images/Strong-Hair-3.jpg" 
+                                 alt="After">
+                            <ul>
+                                <li>Reduced split ends</li>
+                                <li>Shiny, healthy hair</li>
+                                <li>Less breakage</li>
+                                <li>Better hair texture</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="story-text">
+                        <h4>My Story:</h4>
+                        <p>As a college student who loves experimenting with hair colors, my hair was completely damaged. I was about to stop coloring when I found Care Ayurveda. It has repaired my hair while letting me continue my style. The oil is light, doesn't make hair greasy, and the herbal smell is much better than chemical products.</p>
+                        <div class="key-results">
+                            <div class="result">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Hair damage repaired</span>
+                            </div>
+                            <div class="result">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Can continue hair coloring</span>
+                            </div>
+                            <div class="result">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Improved hair health</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonials -->
+    <section class="video-testimonials" style="background: var(--light-gray); padding: 80px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Video Testimonials</h2>
+                <p class="section-subtitle">See real transformations in their own words</p>
+            </div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <i class="fas fa-play-circle"></i>
+                        <img src="images/Strong-Hair-2.jpg" 
+                             alt="Customer Video">
+                    </div>
+                    <div class="video-info">
+                        <h4>"My 6-month hair growth journey"</h4>
+                        <p>Anjali shares her complete transformation story</p>
+                        <span><i class="far fa-clock"></i> 3:45 mins</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <i class="fas fa-play-circle"></i>
+                        <img src="images/Strong-Hair-1.jpg" 
+                             alt="Customer Video">
+                    </div>
+                    <div class="video-info">
+                        <h4>"How I reversed my receding hairline"</h4>
+                        <p>Rahul shows his before-after results</p>
+                        <span><i class="far fa-clock"></i> 4:20 mins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Your Review CTA -->
+    <section class="add-review-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Share Your Experience</h2>
+                <p>We'd love to hear about your hair transformation journey with Care Ayurveda</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="window.open('https://wa.me/918925306239?text=I want to share my review for Care Ayurveda Hair Oil', '_blank')">
+                        <i class="fab fa-whatsapp"></i> Share on WhatsApp
+                    </button>
+                    <button class="btn-secondary" onclick="window.location.href='mailto:careayurveda.contact@gmail.com?subject=My Care Ayurveda Review'">
+                        <i class="fas fa-envelope"></i> Email Your Story
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-text">Care Ayurveda</div>
+                        <div class="logo-subtext">Trusted by 5,000+ Customers</div>
+                    </div>
+                    <p class="footer-description">Real results from real people. Join our community of satisfied customers.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#benefits">Benefits</a></li>
+                        <li><a href="index.html#ingredients">Ingredients</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="license.html">Licenses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Herbal Wellness Center, Chennai</p>
+                    <p><i class="fas fa-phone"></i> +91 89253 06239</p>
+                    <p><i class="fas fa-envelope"></i> careayurveda.contact@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-disclaimer">
+                    <p><i class="fas fa-exclamation-circle"></i> Individual results may vary. These testimonials are based on real customer experiences.</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2026 Care Ayurveda™. All rights reserved.</p>
+                    <p>Made with <i class="fas fa-heart"></i> for healthy hair</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/918925306239" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Call Float Button -->
+    <a href="tel:+918925306239" class="call-float">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/help1.js"></script> -->
+    <!-- <script src="js/help3.js"></script> -->
+    <script src="js/menu.js" defer></script>
+</body>
+</html>
