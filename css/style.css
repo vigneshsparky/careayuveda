@@ -2316,6 +2316,7 @@ footer {
     }
     .contact-card{
         flex-direction: column;
+        align-items: center;
     }
 
     .order-form{
@@ -2336,6 +2337,14 @@ footer {
     .benefits-list li{
         font-size: 0.7rem;
        
+    }
+
+    .usage-steps-about{
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card{
+        padding: 15px;
     }
 
     .product-3d-viewer {
@@ -2431,4 +2440,5 @@ footer {
     background: var(--dark-green);
 
 }
+
 
