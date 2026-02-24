@@ -2295,7 +2295,7 @@ footer {
     }
 
     .product-title {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .features-grid {
@@ -2309,6 +2309,25 @@ footer {
     .btn-primary,
     .btn-secondary {
         width: 100%;
+    }
+
+    .contact-info{
+        max-width: 300px !important;
+    }
+    .contact-card{
+        flex-direction: column;
+    }
+
+    .order-form{
+        padding: 10px;
+    }
+
+    .features-grid{
+        max-width: 300px !important;
+    }
+
+    .tagline-item{
+        font-size: 0.8rem;
     }
 
     .product-3d-viewer {
@@ -2347,7 +2366,7 @@ footer {
     }
 
     .logo-main {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 
     .price-amount {
@@ -2402,4 +2421,5 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--dark-green);
+
 }
